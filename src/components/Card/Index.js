@@ -1,0 +1,18 @@
+import React from 'react';
+import { View, Text } from 'react-native';
+import style from './styles';
+
+const Card = ({ titulo, children }) => {
+    <View style={style.cardContainer}>
+        <View style={style.card}>
+            <View style={style.cardHeader}>
+              <Text>{titulo}</Text>
+            </View>
+            <View style={style.cardContent}>
+                {children}
+            </View>
+        </View>
+    </View>
+}
+
+export default Card;
